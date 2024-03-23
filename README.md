@@ -19,10 +19,10 @@ Create two ec2 instance
 3. ports =  22, 8080
    
 Take SSH and Connect to Instance
-Step 1.6 - CI/CD Setup
+## CI/CD Setup
 
-Install Jenkins for Automation:
-Install Jenkins on the EC2 instance to automate deployment: Install Java
+### Install Jenkins for Automation:
+### Install Jenkins on the EC2 instance to automate deployment: Install Java
 sudo apt update
 sudo apt install  openjdk-11-jdk
 
@@ -51,11 +51,11 @@ publicIp:8080
 
 
 
-Install Necessary Plugins in Jenkins:
+### Install Necessary Plugins in Jenkins:
 
-Goto Manage Jenkins →Plugins → Available Plugins →
+#### Goto Manage Jenkins →Plugins → Available Plugins →
 
-Install below plugins:
+##### Install below plugins:
 SSH Agent Plugin
 Maven Integration plugin
 Docker
@@ -64,11 +64,11 @@ Install below plugins:
 Docker API
 docker-build-step
 
-Add tools in  Dashboard->Manage Jenkins-> Tools
+##### Add tools in  Dashboard->Manage Jenkins-> Tools
 
 
 
-Create Job in Jenkins : go to Dashboard->Item Name
+#### Create Job in Jenkins : go to Dashboard->Item Name
 
 
 
@@ -86,14 +86,7 @@ In Payload URL: Add yours jenkins url
 In Jenkins Job ->Configuration->choose GitHub hook trigger for GITScm polling
 
 
-
-
-
-
-
-
-
-Install  Docker:
+## Install  Docker:
 
 sudo apt install docker.io -y
 sudo usermod -aG docker jenkins
