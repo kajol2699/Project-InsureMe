@@ -102,21 +102,14 @@ Choose "Secret text" as the kind of credentials.
 Enter your DockerHub credentials (Username and Password) and give the credentials an ID (e.g., "docker").
 Click "OK" to save your DockerHub credentials.
 
-
-
-
-
-
-
-Add pipeline script to Jenkins Pipeline:
-
 pipeline {
-    agent any
+    
+     agent any
 
     stages {
         stage('Code-Checkout') {
             steps {
-               checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/kajol2699/insurance.git']])
+              checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/kajol2699/Project-InsureMe.git']])
             }
         }
         
@@ -143,16 +136,17 @@ pipeline {
       }
     }
     
-     stage('Code-Deploy') {
-            steps {
-         sshagent(['deploy_user']) {
-           sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/ProjectInsurance/target/Insurance-0.0.1-SNAPSHOT.war ubuntu@35.154.239.180:/opt/apache-tomcat-8.5.99/webapps"
-              }
-            }
+      
+    stage('Code-Deploy') {
+        steps {
+           ansiblePlaybook credentialsId: 'ansible', installation: 'ansible', playbook: 'ansible-playbook.yml', vaultTmpPath: ''       
         }
+      }
     
-    }
+   }
 }
+
+
 
 Build Pipeline:
 
