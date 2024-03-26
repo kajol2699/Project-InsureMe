@@ -30,25 +30,19 @@ sudo apt install  openjdk-11-jdk
 
 
 #jenkins
-sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \   </br>
 https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-/etc/apt/sources.list.d/jenkins.list > /dev/null
-sudo apt-get update
-sudo apt-get install jenkins
-sudo systemctl start jenkins
-sudo systemctl enable jenkins
+/etc/apt/sources.list.d/jenkins.list > /dev/null   </br>
+sudo apt-get update    </br>
+sudo apt-get install jenkins   </br>
+sudo systemctl start jenkins    </br>
+sudo systemctl enable jenkins   </br>
 
 
 Access Jenkins in a web browser using the public IP of your EC2 instance.
 publicIp:8080
-
-
-
-
-
-
 
 
 ### Install Necessary Plugins in Jenkins:
@@ -67,21 +61,13 @@ publicIp:8080
 ##### Add tools in  Dashboard->Manage Jenkins-> Tools
 
 
-
 #### Create Job in Jenkins : go to Dashboard->Item Name
-
-
-
 
 
 As soon as the developer pushes the updated code on the GIT master branch, the Jenkins job should be triggered using a GitHub Webhook and Jenkins job should be triggered
 
 To Create Webhook: go to settings of your github repository 
 In Payload URL: Add yours jenkins url
-
-
-
-
 
 In Jenkins Job ->Configuration->choose GitHub hook trigger for GITScm polling
 
@@ -94,13 +80,13 @@ sudo systemctl restart jenkins
 
 Add DockerHub Credentials:
 
-To securely handle DockerHub credentials in your Jenkins pipeline, follow these steps:
-Go to "Dashboard" → "Manage Jenkins" → "Manage Credentials."
-Click on "System" and then "Global credentials (unrestricted)."
-Click on "Add Credentials" on the left side.
-Choose "Secret text" as the kind of credentials.
-Enter your DockerHub credentials (Username and Password) and give the credentials an ID (e.g., "docker").
-Click "OK" to save your DockerHub credentials.
+To securely handle DockerHub credentials in your Jenkins pipeline, follow these steps: </br>
+Go to "Dashboard" → "Manage Jenkins" → "Manage Credentials." </br>
+Click on "System" and then "Global credentials (unrestricted)."  </br>
+Click on "Add Credentials" on the left side.    </br>
+Choose "Secret text" as the kind of credentials.  </br>
+Enter your DockerHub credentials (Username and Password) and give the credentials an ID (e.g., "docker"). </br>
+Click "OK" to save your DockerHub credentials. </br>
 
 pipeline {
     
