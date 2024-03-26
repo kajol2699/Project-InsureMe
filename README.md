@@ -50,13 +50,12 @@ publicIp:8080
 #### Goto Manage Jenkins →Plugins → Available Plugins →
 
 ##### Install below plugins:
-1.SSH Agent Plugin </br>
-2.Maven Integration plugin  </br>
-3.Docker  </br>
-4.Docker Commons  </br>
-5.Docker Pipeline  </br>
-6.Docker API  </br>
-7.docker-build-step  </br>
+1.Maven Integration plugin  </br>
+2.Docker  </br>
+3.Docker Commons  </br>
+4.Docker Pipeline  </br>
+5.Docker API  </br>
+6.docker-build-step  </br>
 
 ##### Add tools in  Dashboard->Manage Jenkins-> Tools
 
