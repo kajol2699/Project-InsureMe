@@ -10,7 +10,7 @@ Whenever a developer makes changes to the code and pushes them to the master bra
 Jenkins should automatically start a deployment process.
 </br>
 #### CI/CD Pipeline: </br>
-####### Jenkins should: </br>
+Jenkins should: </br>
 Check out the latest code from the master branch.</br>
 Compile and test the code to ensure it works correctly.</br>
 Package the application into a container using Docker.</br>
