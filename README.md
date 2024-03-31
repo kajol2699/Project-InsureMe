@@ -1,6 +1,61 @@
-# Project-InsureMe
+# Project-InsureMe 
+
+InsureMe was having trouble managing their software because it was all one big piece. </br>
+As they grew bigger, it became even harder to manage. <br>
+
+### Requirements:
+
+#### Automated Deployment:
+Whenever a developer makes changes to the code and pushes them to the master branch of the Git repository, 
+Jenkins should automatically start a deployment process.
+
+#### CI/CD Pipeline:
+####### Jenkins should:
+Check out the latest code from the master branch.
+Compile and test the code to ensure it works correctly.
+Package the application into a container using Docker.
+Deploy the containerized application to a preconfigured test server on AWS.
+
+With DevOps Approch I used several devops tools such as  <br>
+Git: Managed code changes with version control. </br>
+Jenkins: Automated integration, testing, and deployment processes. </br>
+Docker: Containerized applications for consistency and scalability. </br>
+Ansible: Automated server configuration and infrastructure management. </br>
+Selenium: Automated testing of web applications. </br>
+AWS: Provided infrastructure for hosting and deploying the application. </br>
+Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
 
 
+Infrastructure Setup:
+
+You create two virtual servers (EC2 instances) on Amazon Web Services (AWS): one called Master and the other called Node.
+These servers will host your application and manage its deployment.
+CI/CD Setup:
+
+You install Jenkins on the Master server to automate the process of building, testing, and deploying your application.
+Think of Jenkins as a robot that helps you with repetitive tasks like deploying code automatically when it changes.
+Jenkins Job Configuration:
+
+You set up Jenkins to watch your code repository on GitHub.
+Whenever someone makes changes to the code and pushes them to GitHub, Jenkins automatically kicks off a process to update and deploy your application.
+Docker Setup:
+
+You use Docker to package your application and its dependencies into a container, making it easy to deploy and run anywhere.
+Docker makes sure your application runs consistently in different environments.
+Pipeline Configuration:
+
+You define a sequence of steps (pipeline) in Jenkins to build, test, and deploy your application automatically.
+This pipeline runs every time someone makes changes to the code, ensuring that the latest version of your application is always available.
+Build Pipeline:
+
+Whenever someone pushes changes to the code, Jenkins pulls the latest code, builds the application, creates a Docker image, and pushes it to DockerHub (a service for storing Docker images).
+Then, it deploys the updated application to your servers on AWS using Ansible, a tool for automating server configuration.
+Final Output:
+
+With this setup, you have a fully automated process for building, testing, and deploying your application.
+Whenever you or your team make changes to the code, Jenkins takes care of the rest, ensuring that your application is always up-to-date and running smoothly on your servers.
+
+#Steps:
 ## Tech Stack
 ✓ AWS - For creating ec2 machines as servers and deploy the web application. </br>
 ✓ Git - For version control for tracking changes in the code files </br>
