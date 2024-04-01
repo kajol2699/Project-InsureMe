@@ -58,8 +58,8 @@ Final Output:
 With this setup, you have a fully automated process for building, testing, and deploying your application.
 Whenever you or your team make changes to the code, Jenkins takes care of the rest, ensuring that your application is always up-to-date and running smoothly on your servers.
 
-#Steps:
-## Tech Stack
+# $\color{yellow}{Steps}$
+## $\color{blue}{Tech Stack}$
 ✓ AWS - For creating ec2 machines as servers and deploy the web application. </br>
 ✓ Git - For version control for tracking changes in the code files </br>
 ✓ Jenkins - For continuous integration and continuous deployment  </br>
