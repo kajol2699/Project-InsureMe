@@ -67,11 +67,11 @@ Whenever you or your team make changes to the code, Jenkins takes care of the re
 ✓ Ansible - Configuration management tools  </br>
 ✓ Selenium - For automating tests on the deployed web application </br>
 
-## $\color{yellow}{Step 1: Create Infrastructure}$
+## $\color{yellow}{step 1: Create Infrastructure}$
 Create two ec2 instance 
 1. Master
-2. Node
-### Master
+2. Worker 
+### Set Up Master Node
 1. ami = ubuntu
 2. instance type = t2.medium
 3. ports =  22, 8080
@@ -88,7 +88,7 @@ sudo apt install  openjdk-11-jdk
 ``
 
 
-
+````
 #jenkins
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \   </br>
 https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key  </br>
@@ -99,10 +99,10 @@ sudo apt-get update    </br>
 sudo apt-get install jenkins   </br>
 sudo systemctl start jenkins    </br>
 sudo systemctl enable jenkins   </br>
-
+````
 
 Access Jenkins in a web browser using the public IP of your EC2 instance.
-publicIp:8080
+$\color{pink}{publicIp:8080}$
 
 
 ### Install Necessary Plugins in Jenkins:
@@ -132,11 +132,11 @@ In Jenkins Job ->Configuration->choose GitHub hook trigger for GITScm polling
 
 
 ## $\color{yellow}{step 3: Install  Docker}$
-
+````
 sudo apt install docker.io -y
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
-
+````
 Add DockerHub Credentials:
 
 To securely handle DockerHub credentials in your Jenkins pipeline, follow these steps: </br>
