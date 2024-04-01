@@ -148,7 +148,7 @@ Enter your DockerHub credentials (Username and Password) and give the credential
 Click "OK" to save your DockerHub credentials. </br>
 
 ````
-$\color{blue}{pipeline {
+pipeline {
     
      agent any
 
@@ -191,7 +191,7 @@ $\color{blue}{pipeline {
     
    }
 }
-}$
+
 
 ````
 
