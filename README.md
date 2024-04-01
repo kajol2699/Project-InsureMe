@@ -11,11 +11,11 @@ Jenkins should automatically start a deployment process.
 </br>
 #### CI/CD Pipeline: </br>
 Jenkins should: </br>
-* Bullet list
-Check out the latest code from the master branch.</br>
-Compile and test the code to ensure it works correctly.</br>
-Package the application into a container using Docker.</br>
-Deploy the containerized application to a preconfigured test server on AWS.</br>
+ 
+* Check out the latest code from the master branch.</br>
+* Compile and test the code to ensure it works correctly.</br>
+* Package the application into a container using Docker.</br>
+* Deploy the containerized application to a preconfigured test server on AWS.</br>
 
 With DevOps Approch I used several devops tools such as  <br>
 Markup : 1. A numbered list
