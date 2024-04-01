@@ -6,11 +6,11 @@ As they grew bigger, it became even harder to manage. <br>
 
 ### Requirements:
 
-#### Automated Deployment:</br>
+#### 1. Automated Deployment:</br>
 Whenever a developer makes changes to the code and pushes them to the master branch of the Git repository, </br>
 Jenkins should automatically start a deployment process.
 </br>
-#### CI/CD Pipeline: </br>
+#### 2. CI/CD Pipeline: </br>
 Jenkins should: </br>
 
 * Check out the latest code from the master branch.
