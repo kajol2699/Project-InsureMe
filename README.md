@@ -1,4 +1,4 @@
-# Project-InsureMe 
+`rgb(9, 105, 218)` # Project-InsureMe 
 
 InsureMe was having trouble managing their software because it was all one big piece. </br>
 As they grew bigger, it became even harder to manage. <br>
@@ -80,8 +80,9 @@ Take SSH and Connect to Instance
 
 ### Install Jenkins for Automation:
 ### Install Jenkins on the EC2 instance to automate deployment: Install Java
-`` 	`rgb(9, 105, 218)`
-sudo apt update </br>
+`` 	
+sudo apt update 
+
 sudo apt install  openjdk-11-jdk
 ``
 
