@@ -191,7 +191,7 @@ $\color{blue}{pipeline {
     
    }
 }
-}
+}$
 
 ````
 
