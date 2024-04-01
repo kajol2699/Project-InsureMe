@@ -1,4 +1,5 @@
  #  Project-InsureMe 
+ $\color{green}{test}$
 
 InsureMe was having trouble managing their software because it was all one big piece. </br>
 As they grew bigger, it became even harder to manage. <br>
@@ -11,12 +12,12 @@ Jenkins should automatically start a deployment process.
 </br>
 #### CI/CD Pipeline: </br>
 Jenkins should: </br>
- ```diff
+
 * Check out the latest code from the master branch.
 * Compile and test the code to ensure it works correctly
 * Package the application into a container using Docker.
 * Deploy the containerized application to a preconfigured test server on AWS
-```
+
 With DevOps Approch I used several devops tools such as  <br>
 
 - Git: Managed code changes with version control. </br>
