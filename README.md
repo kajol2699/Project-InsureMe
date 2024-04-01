@@ -25,7 +25,7 @@ With DevOps Approch I used several devops tools such as  <br>
 - Ansible: Automated server configuration and infrastructure management. </br>
 - Selenium: Automated testing of web applications. </br>
 - AWS: Provided infrastructure for hosting and deploying the application. </br>
-- Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
+ Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
 
 
 Infrastructure Setup:
@@ -80,8 +80,8 @@ Take SSH and Connect to Instance
 
 ### Install Jenkins for Automation:
 ### Install Jenkins on the EC2 instance to automate deployment: Install Java
-sudo apt update
-sudo apt install  openjdk-11-jdk
+⌘ sudo apt update
+⌘ sudo apt install  openjdk-11-jdk
 
 
 
