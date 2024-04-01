@@ -31,32 +31,18 @@ With DevOps Approch I used several devops tools such as  <br>
 
 Infrastructure Setup:
 
-You create two virtual servers (EC2 instances) on Amazon Web Services (AWS): one called Master and the other called Node.
-These servers will host your application and manage its deployment.
-CI/CD Setup:
-
-You install Jenkins on the Master server to automate the process of building, testing, and deploying your application.
-Think of Jenkins as a robot that helps you with repetitive tasks like deploying code automatically when it changes.
-Jenkins Job Configuration:
-
-You set up Jenkins to watch your code repository on GitHub.
-Whenever someone makes changes to the code and pushes them to GitHub, Jenkins automatically kicks off a process to update and deploy your application.
-Docker Setup:
-
-You use Docker to package your application and its dependencies into a container, making it easy to deploy and run anywhere.
-Docker makes sure your application runs consistently in different environments.
-Pipeline Configuration:
-
-You define a sequence of steps (pipeline) in Jenkins to build, test, and deploy your application automatically.
+<p> create two EC2 instances on Amazon Web Services (AWS): one called Master and the other called Node.
+These servers will host application and manage its deployment.
+install Jenkins on the Master server to automate the process of building, testing, and deploying application.
+set up Jenkins to watch your code repository on GitHub.
+Whenever someone makes changes to the code and pushes them to GitHub, Jenkins automatically kicks off a process to update and deploy application.
+used Docker to package application and its dependencies into a container, making it easy to deploy and run anywhere.
+after that write a pipeline in Jenkins to build, test, and deploy your application automatically.
 This pipeline runs every time someone makes changes to the code, ensuring that the latest version of your application is always available.
-Build Pipeline:
-
 Whenever someone pushes changes to the code, Jenkins pulls the latest code, builds the application, creates a Docker image, and pushes it to DockerHub (a service for storing Docker images).
 Then, it deploys the updated application to your servers on AWS using Ansible, a tool for automating server configuration.
-Final Output:
-
-With this setup, you have a fully automated process for building, testing, and deploying your application.
-Whenever you or your team make changes to the code, Jenkins takes care of the rest, ensuring that your application is always up-to-date and running smoothly on your servers.
+With this setup, you  can fully automated process for building, testing, and deploying your application.
+Whenever someone make changes to the code, Jenkins takes care of the rest, ensuring that your application is always up-to-date and running smoothly on your servers.</p>
 
 # $\color{red}{Steps}$
 ## $\color{green}{Tech Stack}$
