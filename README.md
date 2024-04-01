@@ -58,8 +58,8 @@ Final Output:
 With this setup, you have a fully automated process for building, testing, and deploying your application.
 Whenever you or your team make changes to the code, Jenkins takes care of the rest, ensuring that your application is always up-to-date and running smoothly on your servers.
 
-# $\color{yellow}{Steps}$
-## $\color{red}{Tech Stack}$
+# $\color{red}{Steps}$
+## $\color{green}{Tech Stack}$
 ✓ AWS - For creating ec2 machines as servers and deploy the web application. </br>
 ✓ Git - For version control for tracking changes in the code files </br>
 ✓ Jenkins - For continuous integration and continuous deployment  </br>
@@ -67,7 +67,7 @@ Whenever you or your team make changes to the code, Jenkins takes care of the re
 ✓ Ansible - Configuration management tools  </br>
 ✓ Selenium - For automating tests on the deployed web application </br>
 
-## $\color{green}{Step 1: Create Infrastructure}$
+## $\color{yellow}{Step 1: Create Infrastructure}$
 Create two ec2 instance 
 1. Master
 2. Node
@@ -77,7 +77,7 @@ Create two ec2 instance
 3. ports =  22, 8080
    
 Take SSH and Connect to Instance
-## $\color{green}{step 2: CI/CD Setup}$
+## $\color{yellow}{step 2: CI/CD Setup}$
 
 ### Install Jenkins for Automation:
 ### Install Jenkins on the EC2 instance to automate deployment: Install Java
@@ -131,7 +131,7 @@ In Payload URL: Add yours jenkins url
 In Jenkins Job ->Configuration->choose GitHub hook trigger for GITScm polling
 
 
-## $\color{green}{step 3: Install  Docker}$
+## $\color{yellow}{step 3: Install  Docker}$
 
 sudo apt install docker.io -y
 sudo usermod -aG docker jenkins
@@ -148,7 +148,7 @@ Enter your DockerHub credentials (Username and Password) and give the credential
 Click "OK" to save your DockerHub credentials. </br>
 
 ````
-pipeline {
+$\color{blue}{pipeline {
     
      agent any
 
@@ -190,6 +190,7 @@ pipeline {
       }
     
    }
+}
 }
 
 ````
