@@ -18,14 +18,14 @@ Jenkins should: </br>
 * Deploy the containerized application to a preconfigured test server on AWS.</br>
 
 With DevOps Approch I used several devops tools such as  <br>
-Markup : 1. A numbered list
-Git: Managed code changes with version control. </br>
-Jenkins: Automated integration, testing, and deployment processes. </br>
-Docker: Containerized applications for consistency and scalability. </br>
-Ansible: Automated server configuration and infrastructure management. </br>
-Selenium: Automated testing of web applications. </br>
-AWS: Provided infrastructure for hosting and deploying the application. </br>
-Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
+
+- Git: Managed code changes with version control. </br>
+- Jenkins: Automated integration, testing, and deployment processes. </br>
+- Docker: Containerized applications for consistency and scalability. </br>
+- Ansible: Automated server configuration and infrastructure management. </br>
+- Selenium: Automated testing of web applications. </br>
+- AWS: Provided infrastructure for hosting and deploying the application. </br>
+- Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
 
 
 Infrastructure Setup:
