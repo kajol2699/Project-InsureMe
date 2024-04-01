@@ -81,7 +81,7 @@ Take SSH and Connect to Instance
 ### Install Jenkins for Automation:
 ### Install Jenkins on the EC2 instance to automate deployment: Install Java
 ``
-sudo apt update
+sudo apt update </br>
 sudo apt install  openjdk-11-jdk
 ``
 
