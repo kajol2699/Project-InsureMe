@@ -4,7 +4,7 @@
 InsureMe was having trouble managing their software because it was all one big piece. </br>
 As they grew bigger, it became even harder to manage. <br>
 
-### Requirements:
+### $\color{pink}{Requirements}$
 
 #### 1. Automated Deployment:</br>
 Whenever a developer makes changes to the code and pushes them to the master branch of the Git repository, </br>
@@ -29,7 +29,7 @@ With DevOps Approch I used several devops tools such as  <br>
  Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
 
 
-Project Summary
+$\color{red}{Project Summary}$
 
 - Create two EC2 instances on Amazon Web Services (AWS): one called Master and the other called Node.
 - These servers will host application and manage its deployment.
