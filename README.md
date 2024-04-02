@@ -24,7 +24,6 @@ With DevOps Approch I used several devops tools such as  <br>
 - Jenkins: Automated integration, testing, and deployment processes. </br>
 - Docker: Containerized applications for consistency and scalability. </br>
 - Ansible: Automated server configuration and infrastructure management. </br>
-- Selenium: Automated testing of web applications. </br>
 - AWS: Provided infrastructure for hosting and deploying the application. </br>
  Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
 
@@ -50,7 +49,6 @@ With DevOps Approch I used several devops tools such as  <br>
 ✓ Jenkins - For continuous integration and continuous deployment  </br>
 ✓ Docker - For deploying containerized applications </br>
 ✓ Ansible - Configuration management tools  </br>
-✓ Selenium - For automating tests on the deployed web application </br>
 
 ## $\color{yellow}{step 1: Create Infrastructure}$
 Create two ec2 instance 
