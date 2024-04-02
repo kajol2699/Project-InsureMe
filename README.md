@@ -61,6 +61,15 @@ Create two ec2 instance
 1. ami = ubuntu
 2. instance type = t2.medium
 3. ports =  22, 8080
+
+![INSTANCE](https://github.com/kajol2699/Project-InsureMe/assets/130952932/f7320304-f0a4-4475-84ee-420e16cc6aca)
+
+
+![SG](https://github.com/kajol2699/Project-InsureMe/assets/130952932/ec2bbe1f-6464-49af-8cdd-cccd6ccca89e)
+
+![NODES](https://github.com/kajol2699/Project-InsureMe/assets/130952932/87c9d3bb-1ff7-4a4f-b521-a11855cbfd52)
+
+
    
 Take SSH and Connect to Instance
 ## $\color{yellow}{step 2: CI/CD Setup}$
@@ -89,7 +98,7 @@ sudo systemctl enable jenkins   </br>
 
 Access Jenkins in a web browser using the public IP of your EC2 instance.
 $\color{pink}{publicIp:8080}$
-
+![JENKINS-HOME](https://github.com/kajol2699/Project-InsureMe/assets/130952932/eee7b43a-bdc6-44d4-b8ee-d66e101cea21)
 
 ### Install Necessary Plugins in Jenkins:
 
@@ -104,18 +113,17 @@ $\color{pink}{publicIp:8080}$
 6.docker-build-step  </br>
 
 ##### Add tools in  Dashboard->Manage Jenkins-> Tools
-
+![JENKINS-TOOLS](https://github.com/kajol2699/Project-InsureMe/assets/130952932/9e92b0b3-e7db-4257-9287-7d49006d130f)
 
 #### Create Job in Jenkins : go to Dashboard->Item Name
-
+![JOB](https://github.com/kajol2699/Project-InsureMe/assets/130952932/0485ed2e-3795-477a-ac64-508ec8bef2d1)
 
 As soon as the developer pushes the updated code on the GIT master branch, the Jenkins job should be triggered using a GitHub Webhook and Jenkins job should be triggered
-
+In Jenkins Job ->Configuration->choose GitHub hook trigger for GITScm polling
+![WEBHOOK-JEN](https://github.com/kajol2699/Project-InsureMe/assets/130952932/81253cac-b3b6-4816-ac18-b044e671ee3d)
 To Create Webhook: go to settings of your github repository 
 In Payload URL: Add yours jenkins url
-
-In Jenkins Job ->Configuration->choose GitHub hook trigger for GITScm polling
-
+![WEBHOOK](https://github.com/kajol2699/Project-InsureMe/assets/130952932/8d11e27b-39bc-4443-b01c-613290897690)
 
 ## $\color{yellow}{step 3: Install  Docker}$
 ````
@@ -183,7 +191,8 @@ pipeline {
 
 Build Pipeline:
 
-
+![BUILD PIPELINE](https://github.com/kajol2699/Project-InsureMe/assets/130952932/c3638768-a2e3-47c8-a691-35e92980d01d)
 
 
 Final Output:
+![OUTPUT](https://github.com/kajol2699/Project-InsureMe/assets/130952932/237d1bd2-97df-4451-a69c-11e6c3ef6d12)
