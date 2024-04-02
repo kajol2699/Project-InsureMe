@@ -28,8 +28,7 @@ With DevOps Approch I used several devops tools such as  <br>
 - AWS: Provided infrastructure for hosting and deploying the application. </br>
  Together, these tools streamlined development, testing, and deployment, ensuring efficient management of the InsureMe project. </br>
 
-
-$\color{orange{Project Summary}$
+### $\color{orange}{Project Summary}$
 
 - Create two EC2 instances on Amazon Web Services (AWS): one called Master and the other called Node.
 - These servers will host application and manage its deployment.
